@@ -1,24 +1,28 @@
 {
-  "name": "github-oauth-server",
-  "version": "1.0.0",
-  "description": "GitHub OAuth Web Application Flow for Client Side Applications",
-  "main": "index",
+  "name": "git-oauth",
+  "description": "Enables client-side applications to dance OAuth with Github.",
+  "url": "http://github.com/pasanjg/github-oauth-server",
+  "keywords": [
+    "github",
+    "oauth"
+  ],
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pasanjg/github-oauth-server.git"
+    "url": "https://github.com/pasanjg/github-oauth-server"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pasanjg/github-oauth-server/issues"
-  },
-  "homepage": "https://github.com/pasanjg/github-oauth-server#readme",
+  "author": "Pasan Godamune",
+  "license": "MIT",
+  "contributors": [],
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "engines": {
+    "node": "~6.11.1"
+  },
+  "main": "index",
+  "version": "0.1.0",
+  "devDependencies": {}
 }
