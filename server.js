@@ -56,6 +56,12 @@ function authenticate(code, cb) {
 	req.on('error', function (e) { cb(e.message); });
 }
 
+app.all('*', function (req, res, next) {
+	res.header('Access-Control-Allow-Origin', '*');
+	res.header('Access-Control-Allow-Methods', 'GET, OPTIONS');
+	res.header('Access-Control-Allow-Headers', 'Content-Type');
+	next();
+});
 
 app.get('/authenticate/:code', function (req, res) {
 	console.log('authenticating code:', req.params.code, true);
