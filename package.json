@@ -20,7 +20,7 @@
     "express": "^4.17.1"
   },
   "engines": {
-    "node": "~6.11.1"
+    "node": "18.x"
   },
   "main": "index",
   "version": "0.1.0",
